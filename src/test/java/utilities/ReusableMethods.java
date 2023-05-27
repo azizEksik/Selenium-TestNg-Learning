@@ -2,9 +2,9 @@ package utilities;
 
 public class ReusableMethods {
 
-    public static void waitOfSecond(int saniye){
+    public static void waitOfSecond(int second){
         try {
-            Thread.sleep(saniye*1000);
+            Thread.sleep(second*1000);
         } catch (InterruptedException e) {
         }
     }
