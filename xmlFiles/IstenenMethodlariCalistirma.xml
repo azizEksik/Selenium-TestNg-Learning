@@ -1,28 +1,42 @@
 
-<!-- Bir class'in icinde bir tek test methodu varsa
-     o methodu calistimrmak icin calss'i calistirmak yeterli olacaktir
+<!-- Bir class'ın içinde bir tek test methodu varsa
+     o methodu calsitirmak icin calss'i calistirmak yeterli olacaktir
 
-     method secimi birden fazla test methodu barindiran class'larda
-     spesifik olarak bazı method'lari calistirmak
-     veya spesifik olarak belirlenen test methodlari dısında tüm methodlari calistirmak
-      icin kullanilir-->
+     method secimi, birden fazla test methodu barindiran class'larda
+     spesifik olarak bazi methodlari calistirmak
+     veya spesifik olarak belirlenen test methodlari disinda tum methodlari calistirmak
+     icin kullanilir
+
+
+     Eger bir xml dosyasi ile
+     istedigimiz farkli package, class veya class'taki methodlari calistirmak istersek
+     hiyerarside uygun yerden yapiyi yeniden baslatabiliriz-->
 
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Istenen test methodlarini Calistimra">
 
-<suite name="Istenen Test Methodlarini Calistirma">
-    
     <test name="Negatif testler">
 
         <classes>
 
             <class name="tests.day15_POM.C03_qualitydemyNegatifLoginTest">
-
-
-
+            <methods>
+                <!-- Sadece verilen methodlari calistirmasi icin include -->
+                <include name="gecersizIsisimTesti"></include>
+                <include name="gecersizSifreTesti"></include>
+            </methods>
+            </class>
+            
+            <class name="tests.day14_TestNGFrameworkOlusturma.C01_Priority">
+                <methods>
+                    <!-- Verilen methodlar dısındaki tüm methodlari calistirmasi icin exclude -->
+                    <exclude name="youtubeTesti"></exclude>
+                    <exclude name="amazonTest"></exclude>
+                </methods>
             </class>
 
         </classes>
 
     </test>
-    
+
 </suite>

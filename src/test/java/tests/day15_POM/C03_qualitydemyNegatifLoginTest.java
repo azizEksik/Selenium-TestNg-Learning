@@ -33,7 +33,7 @@ public class C03_qualitydemyNegatifLoginTest {
         Driver.closeDriver();
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void gecersizSifreTesti(){
 
         // qualitydemy anasayfaya gidin

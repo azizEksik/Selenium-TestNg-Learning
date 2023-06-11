@@ -17,7 +17,7 @@ public class C01_Priority {
         eger priority degeri aynı olan birden fazla test varsa, yine harf sirasina bakar
      */
 
-    @Test(priority = 57)
+    @Test(groups = "minireg1")
     public void youtubeTesti(){
         System.out.println("Youtube");
     }
@@ -27,7 +27,7 @@ public class C01_Priority {
         System.out.println("Wise Quarter");
     }
 
-    @Test (priority = 57)
+    @Test (groups = {"smoke","minireg1"})
     public void amazonTest(){ // priority yazılmazsa default deger olan 0 kabul edilir
         System.out.println("Amazon");
     }

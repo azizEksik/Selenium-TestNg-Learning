@@ -1,14 +1,13 @@
-
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
 <suite name="Istenen package'lari calistirma">
     
-    <test name="POM testleri">
+    <test name="POM Testleri">
         
         <packages>
             
             <package name="tests.day15_POM"></package>
             <package name="tests.day16_POM_Assertions"></package>
-
             
         </packages>
         

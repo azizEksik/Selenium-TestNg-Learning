@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!--Toplu calistirmada
+    calisacak methodlari tek tek xml dosyasina islemek yerine
+    her methodun dahil olacagı test gruplarini
+    methodlarin bulundugu yerde isaretleyebiliriz
+
+    ornegin smoke test icin buradan tek tek method sececegimize
+    smoke olarak calisacak test methodlarini
+    fremawork'de gruplayabiliriz
+
+    Bir gruba dahil olan test methodlari farkli konumlarda olabilecegi gibi
+    bir tek test methodu birden fazla gruba dahil olabilir
+
+    bu durumda grup calistirma icin iki hiyerarsi olusturulmalidir
+    1- calisacak veya calismayacak gruplari belirlemek icin
+    2- calistirmak istedigimiz methodlarin yerini göstermek icin
+
+    -->
+
+<suite name="Istenen grupları calistirma">
+
+    <test name="smoke test">
+        
+        <groups>
+            <run>
+                <!--include ve exclude birden fazla kullanılabilir
+                    istediğimiz özelliklere sahip methodlari net olarak belirleyebiliriz-->
+                <include name="smoke"></include>
+            </run>
+        </groups>
+
+        <packages>
+            <!-- tests package'ının altında bütün smoke olarak adlandırılmış methodlari  calistir -->
+            <package name="tests.*"></package>
+        </packages>
+        
+    </test>
+
+</suite>

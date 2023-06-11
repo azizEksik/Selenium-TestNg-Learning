@@ -8,7 +8,7 @@ import utilities.ReusableMethods;
 
 public class C02_qualitydemyLoginTest {
 
-    @Test
+    @Test(groups = "smoke")
     public void test01(){
         // QUALITYDEMY ana sayfaya gidin
         Driver.getDriver().get("https://www.qualitydemy.com/");
@@ -29,7 +29,7 @@ public class C02_qualitydemyLoginTest {
         Assert.assertTrue(qualityDemyPage.userProfileImage.isDisplayed());
 
         // sayfayi kapatın
-        ReusableMethods.waitOfSecond(3);
+
         Driver.closeDriver();
     }
 }

@@ -35,8 +35,8 @@ public class C04_DriverIlkTest {
 
         Assert.assertTrue(resutlsElement.getText().contains("Nutella"));
 
-        ReusableMethods.waitOfSecond(3); // Thred.sleep() yerine olusturdugumuz method
-
+         // Thred.sleep() yerine olusturdugumuz method
+            ReusableMethods.bekle(3);
         //Driver.closeDriver(); // driver.close() yerine olusturdugumuz method
     }
 }
