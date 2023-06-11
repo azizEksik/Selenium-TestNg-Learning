@@ -26,7 +26,7 @@ public class AmazonPage {
         // ve bu constructo'un icinde bulunan initElements() methodu gerekli ayarı yapmış olacak
     }
 
-    @FindBy(id = "twotabsearchtextbox")
+    @FindBy(xpath = "//input[@id='twotabsearchtextbox']")
     public WebElement searchBox;
 
     @FindBy(xpath = "(//div[@class='sg-col-inner'])[1]")
