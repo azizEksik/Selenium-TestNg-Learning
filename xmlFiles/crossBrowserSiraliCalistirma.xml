@@ -1,0 +1,55 @@
+
+
+<!--
+    Cross Browser calistirdigimiz testlerin hepsini aynı browser ile calistirmak yerine
+    uygun gordügümüz parcalara ayırıp, her bir parcayi farklı browser ile calsitmak demektir
+
+    xml dosyasından calistirgimiz tesler sirrasiyla calisir
+    her test Driver class'indan gelen driveri'i kullanir
+    Driver class'i da driver objesini olustururken
+    hangi browser'in kullanilacagi bilgisini
+    configuration.properties dosyasindan alir
+
+    standart xml dosyasi standart class'lar ve
+    standart olarak kullandigimiz Driver class'i ile
+    Cross browser Test YAPMAK MUMKUN DEGİLDİR
+
+    Cross browser cok ozel bir islem oldugundan
+    tum classlar icin degil
+    belirlenmiş az sayida calss icin uygulanir
+
+    Cross browser ile test yapmak icin
+    calisan sitemde degisiklik yapmak zorundayız
+
+    1- baslangic noktamız xml doyası oldugu icin
+       degisiklige buradan basliyoruz
+ -->
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Istenen class'lari calistirma">
+
+    <test name="Chrome test">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+
+            <class name="tests.day19_CrossBroserTesting.C01_AmazonSearch"></class>
+            <class name="tests.day19_CrossBroserTesting.C02_AltersTesti"></class>
+
+
+        </classes>
+
+    </test>
+
+    <test name="Edge test">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+
+            <class name="tests.day19_CrossBroserTesting.C01_AmazonSearch"></class>
+            <class name="tests.day19_CrossBroserTesting.C02_AltersTesti"></class>
+
+        </classes>
+
+    </test>
+
+</suite>

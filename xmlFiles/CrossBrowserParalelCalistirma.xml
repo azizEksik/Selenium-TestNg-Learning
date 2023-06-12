@@ -1,0 +1,36 @@
+<!--
+    Paralel calistirma ile cross borwser calistirma
+    birbirinden bagımsız konulardır
+
+    - yani ikisi de olabilir
+      (paralel cross browser calistirma : ayni anda birden fazla browser calisir
+                                         ve tum browserlar birbirinden farklı olur)
+
+    - sadece biri olabilir
+      (cross browser sirali calisma
+      veya sadece bir tür browser ile birden fazla browser'in ayni anda calismaya baslaması)
+
+    - hic biri de olmayabilir
+      istedifimiz kadar test siral ioalrak
+      configuration.properties de tanımlanan browser ile calisir
+-->
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="paralel cross browser testing" thread-count="2" parallel="tests" verbose="5">
+    
+    <test name="chrome testi">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="tests.day19_CrossBroserTesting.C01_AmazonSearch"></class>
+        </classes>
+    </test>
+    
+    <test name="edge testi">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="tests.day19_CrossBroserTesting.C02_AltersTesti"></class>
+        </classes>
+    </test>
+    
+</suite>

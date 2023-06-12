@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac88d16a-65b6-4297-9263-3c793a3d20ab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AmazonPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AmazonPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/day15_POM/C02_qualitydemyLoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/day15_POM/C02_qualitydemyLoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.C04_DataProviderNegatifLoginTest">
+  <component name="RunManager" selected="TestNG.C:/Users/90545/IdeaProjects/com.Team113TestNG/xmlFiles/CrossBrowserParalelCalistirma.xml">
     <configuration name="C03_DataProvider" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="com.Team113TestNG" />
       <extension name="coverage">
@@ -101,9 +100,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/90545/IdeaProjects/com.Team113TestNG/xmlFiles/ParalelClassCalistrima.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/90545/IdeaProjects/com.Team113TestNG/xmlFiles/CrossBrowserParalelCalistirma.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="com.Team113TestNG" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/ParalelClassCalistrima.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/CrossBrowserParalelCalistirma.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -111,9 +110,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/90545/IdeaProjects/com.Team113TestNG/xmlFiles/ParalelTestCalistirma.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/90545/IdeaProjects/com.Team113TestNG/xmlFiles/crossBrowserSiraliCalistirma.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="com.Team113TestNG" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/ParalelTestCalistirma.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/xmlFiles/crossBrowserSiraliCalistirma.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -123,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/90545/IdeaProjects/com.Team113TestNG/xmlFiles/CrossBrowserParalelCalistirma.xml" />
+        <item itemvalue="TestNG.C:/Users/90545/IdeaProjects/com.Team113TestNG/xmlFiles/crossBrowserSiraliCalistirma.xml" />
         <item itemvalue="TestNG.C04_DataProviderNegatifLoginTest" />
         <item itemvalue="TestNG.C03_DataProvider" />
         <item itemvalue="TestNG.C03_DataProvider.test01" />
-        <item itemvalue="TestNG.C:/Users/90545/IdeaProjects/com.Team113TestNG/xmlFiles/ParalelTestCalistirma.xml" />
-        <item itemvalue="TestNG.C:/Users/90545/IdeaProjects/com.Team113TestNG/xmlFiles/ParalelClassCalistrima.xml" />
       </list>
     </recent_temporary>
   </component>
